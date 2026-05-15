@@ -1,0 +1,53 @@
+GENERAL
+========
+cd = directly takes to home folder
+
+
+SYSTEM INFO
+============
+uname -i = systemname
+uname -o = os name
+uname --help
+NOTE: uname -a is same as uname --all 
+man uname (gives detailed info of that command) or uname --help
+---------------------------------------------------------------------------------------------------------------------
+FILES
+======
+ls = list subdirectoris
+ls -l = long format
+ls -lr - reverse format
+ls -lt, ls -ltr = with timestamp
+mkdir = create folder / make directory
+tocuh filename = create file
+cat > filename = will also creates file at the same time allows you to text something in it (to exit hit enter, ctrl d)
+cat >> to append text without overriding
+cat filename = to read content of files
+rm filename = remove file
+rmdir foldername = remove directory
+cp source destination = copy files
+mv filename newfilename = rename file, also to move files
+-----------------------------------------------------------------------
+BROWSER:
+=========
+web get url: wget url, to download something
+curl: used to hit the API urls, just to view data, we can also download using curl
+
+SEARCHING/GREP
+==========
+grep word filename - to search that word in filename
+grep -n word filename: also gives line number
+grep -n -i word filename: ignores uppercase lowercase and gives all output
+cat test | grep -i morning
+
+HEAD TAIL & pipe
+=================
+head -n 3 filename, tail -n 4 filename
+head -n 1 test | tail -n 6 test gives first output to second input
+
+TO VIEW ALL USERS
+=================
+cat /etc/passwd : we can see all users
+
+
+
+

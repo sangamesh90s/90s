@@ -1,0 +1,42 @@
+GEBERATE PUB PRIVATE KEYS:
+ssh keygen -f filenamehere (-f filename)
+ex: ssh keygen 88s
+
+LOGIN TO EC2 VIA GITBASH
+ssh -i privatekeyname username@ipaddress
+ex: ssh -i 88s ec2-user@publicip (ssh -i "88s.pem" ec2-user@ec2-54-167-61-165.compute-1.amazonaws.com)
+===============================================================================
+==> long-time instance alive
+---->nano ~/.ssh/config
+Type the below:
+Host *
+    ServerAliveInterval 120
+    ServerAliveCountMax 30
+
+Save the file -->Ctrl + x
+Enter --->y
+Enter
+
+cat ~/.ssh/config
+
+Output should be:
+Host *
+    ServerAliveInterval 120
+    ServerAliveCountMax 30
+
+Instance configuration:
+After connect with instance do the below:
+--->sudo nano /etc/ssh/sshd_config
+---> ctrl+w 
+--> Type "ClientAlive" and hit "enter"
+--->you will see the below values
+#ClientAliveInterval 0
+#ClientAliveCountMax 3
+
+--->Change these values like this
+ClientAliveInterval 120
+ClientAliveCountMax 30
+Note:  Remove "# " mandatory before the lines.
+
+--->Ctrl +x and Enter 
+---> sudo systemctl restart sshd
