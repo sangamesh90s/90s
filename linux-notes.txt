@@ -2,7 +2,6 @@ GENERAL
 ========
 cd = directly takes to home folder
 
-
 SYSTEM INFO
 ============
 uname -i = systemname
