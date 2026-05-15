@@ -48,6 +48,15 @@ TO VIEW ALL USERS
 =================
 cat /etc/passwd : we can see all users
 
+PROCESS
+=======
+ps 
+ps -ef
+ps -u anyname - to check that particular PROCESS
+ps kill pid
+ps -9 pid - force kill
+
+
 
 
 
