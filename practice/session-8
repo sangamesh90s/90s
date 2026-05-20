@@ -1,0 +1,9 @@
+DNS 
+purchase domain from hostinger.in
+purchase domain in hostinger or any thirdparty => goes to TDL (.in, .com, .org, .ai etc)
+=> it checks and goes to => root servers(overall 13 locations we have in world which is also called icaan[who manages these locations])
+------------
+we have nameservers ex: ns1, ns2 we can use them 
+we have TTL time to leave, it is a cache , to change IP addresses in a short time
+---------------
+when we search any doamin ex: facebook it checks ip in browsers cache, if not available, checks os cache, then ISP cache, then root servers - tld - from there it checks ip and resolves to domain name
